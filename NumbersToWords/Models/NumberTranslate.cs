@@ -53,5 +53,15 @@ namespace NumbersToWords.Models
         {90, "Ninety"}};
       return tensColumn;
     }
+
+    public static Dictionary<int, string> TranslateLargeNumbers()
+    {
+      Dictionary<int, string> bigNumbers = new Dictionary<int, string> {
+        {100, "Hundred"},
+        {1000, "Thousand"}, 
+        {1000000, "Million"}, 
+        {1000000000, "Billion"}};
+      return bigNumbers;
+    }
   }
 }

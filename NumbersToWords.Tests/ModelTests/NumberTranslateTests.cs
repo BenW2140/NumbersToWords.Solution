@@ -29,6 +29,7 @@ namespace NumbersToWords.Tests
         {9, "Nine"}};
       CollectionAssert.AreEqual(ones, NumberTranslate.TranslateOnes());
     }
+
     [TestMethod]
     public void TranslateTens_ConvertTensToEnglish_Dictionary()
     {
@@ -52,6 +53,16 @@ namespace NumbersToWords.Tests
         {80, "Eighty"},
         {90, "Ninety"}};
       CollectionAssert.AreEqual(tens, NumberTranslate.TranslateTens());
+    }
+
+    public void TranslateLargeNumbers_ConvertLargeNumbersToEnglish()
+    {
+      Dictionary<int, string> largeNumbers = new Dictionary<int, string> {
+        {100, "Hundred"},
+        {1000, "Thousand"}, 
+        {1000000, "Million"}, 
+        {1000000000, "Billion"}};
+      CollectionAssert.AreEqual(largeNumbers, NumberTranslate.TranslateLargeNumbers());
     }
   }
 }
