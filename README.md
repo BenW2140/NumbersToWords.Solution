@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Numbers to words_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Spells out numbers in english, July 16, 2020_
 
-#### By _**Ben White**_
+#### By _**Ben White, Benjamin Russell**_
 
 ## Description
 
@@ -32,9 +32,15 @@ Open using Git Pages:
 
 ## Specs
 
-| |
+Behavior|Input|Output
 ------|------|------
-| |
+The program will return true if the user entered a number|123|True
+The program will return a number in english from 0-9|8|Eight
+The program will return a number in english from 0-99|43|Forty Three
+The program will return a number in english from 0-999|666|Six Hundred and Sixty Six
+The program will return a number in english from 0-999999|123456|One hundred Twenty Three Thousand Four Hundred and Fifty Six
+The program will return a number in english from 0-999999999|123454321|One Hundred Twenty Three Million Four Hundred Fifty Four Thousand Three Hundred and Twenty One
+The program will return a number in english from 0-999999999999|You get the picture|...
 
 ## Known Bugs
 
@@ -52,4 +58,4 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 *MIT License*
 
-Copyright (c) 2020 **_Ben White_**
+Copyright (c) 2020 **_Ben White & Ben Russell_**
